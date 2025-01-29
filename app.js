@@ -7,14 +7,17 @@ import "/css/styles.css";
 
 import { createApp } from 'vue';
 
-const app = createApp({});
+const app1 = createApp({});
 
 import HelloComponent from "./vueComponents/Hello.vue";
-app.component('hello', HelloComponent);
+app1.component('hello', HelloComponent);
 import AboutComponent from "./vueComponents/About.vue";
-app.component('about', AboutComponent);
+app1.component('about', AboutComponent);
+
+app1.mount('#app1');
+
+const app2 = createApp({});
 import Test from "./vueComponents/TestComposition.vue";
-app.component('test', Test);
+app2.component('test', Test);
 
-app.mount('#app');
-
+app2.mount('#app2');
