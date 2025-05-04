@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import { ref, toRefs, onMounted, defineProps, computed, watch } from 'vue';
+import { ref, toRefs, onMounted, computed, watch } from 'vue';
 
 const props = defineProps({
   title: {
